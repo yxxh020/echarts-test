@@ -51,8 +51,7 @@ export class EchartsComponent implements OnInit {
       this.processSleeData(this.sleepData);
     }
   }
-
-
+  
   async initChart(): Promise<void> {
     // const echarts = await import('echarts');
 
