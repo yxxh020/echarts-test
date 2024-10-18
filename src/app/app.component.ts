@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { EchartsComponent } from './echarts/echarts.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, EchartsComponent],
+  template: `
+    <router-outlet></router-outlet>
+    <app-echarts></app-echarts>
+  `,
+  styles: []
 })
 export class AppComponent {
   title = 'echarts-test';

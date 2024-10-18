@@ -1,0 +1,15 @@
+<style>
+.time{
+  padding: 0 30px;
+}
+</style>
+
+<div *ngIf="isBrowser">
+  <div echarts [options]="chartOptions" class="demo-chart"></div>
+  <div class="time">
+    <p>총 수면 시간: {{ allSleepTime }} 시간</p>
+    <p>깊은 수면: {{ deepSleepTime }} 시간</p>
+    <p>얕은 수면: {{ lowSleepTime }} 시간</p>
+    <p>수면 중 기상: {{ wakeCount }} 회</p>
+  </div>
+</div>
